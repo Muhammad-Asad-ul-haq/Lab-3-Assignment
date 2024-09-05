@@ -1,10 +1,13 @@
 #include <stdio.h>
 int main()
 {
+	//declaring the variable
 	int Principle;
 	float Rate;
 	int Time_period;
 	int interest;
+
+	//asking for the inputs from the user
 	printf(" Enter the principle : ");
 	scanf("%d",&Principle);
 	while ((Principle<100) || (Principle>1000000))
@@ -26,6 +29,8 @@ int main()
 		printf(" Enter the time period again : ");
 		scanf("%d",&Time_period);
 	} 
+
+	//calculating the values
 	Rate=Rate/100;
 	interest=Principle*Rate*Time_period;
 	printf(" The interest is %d",interest);
